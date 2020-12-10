@@ -69,7 +69,38 @@ with that attention matrix, Bertviz readily outputs the attention graph.
 
 ## Discussion
 
+The attention in music seems to be a bit more scattered than language, where there doesn't seem to be a pattern for the notes to pay close attention to. However, one observation is that the later the layers, the more concentrated the attention becomes. see below of the comparison of 3 layers. 
 
+<table>
+	<tr>
+		<th>
+			Layer 0
+		</th>
+		<th>
+			Layer 6
+		</th>
+		<th>
+			Layer 11
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/layer0.png" alt="layer0" height="400"/>
+		</td>
+		<td>
+			<img src="images/layer6.png" alt="layer6" height ="400"/>
+		</td>
+		<td>
+			<img src="images/layer11.png" alt="layer11" height ="400"/>
+		</td>
+	</tr>
+</table>
+
+
+This can be explained by that the later layers have learned the more corelations between the notes, and therefore the attentions are more distinct.
 
 ## Future Improvements
 
+For future improvements, I'd like to work on the following:
+
+1. 
