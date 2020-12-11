@@ -75,7 +75,7 @@ With this attention matrix and the token list, Bertviz readily outputs the atten
 
 ## Discussion
 
-The attention in music seems to be a bit more scattered than language models, and there doesn't seem to be a pattern for the individual notes to pay close attention to or focus on. However, one observation is that the later the layers, the more concentrated the attention becomes. see below for the comparison of 3 layers. 
+Our music attention result seems a bit more scattered than language models, and there doesn't seem to be a pattern for the individual notes to pay close attention to or focus on. However, one observation is that the later the layers, the more concentrated the attention becomes. see below for the comparison of 3 layers. 
 
 <table>
 	<tr>
