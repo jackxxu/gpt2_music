@@ -36,6 +36,11 @@ We are now ready to feed the songs into the GPT2 model for finetuning.
 
 The finetune is actually quite straightforward, `gpt2.finetune` is all we need, after `gtp2.download_model` function downloads the [pretrained model from google cloud](https://storage.googleapis.com/gpt-2). The `finetune` method takes the name of a text file and also the number of iterations to train the model. In our case, we used 1000 iterations. 
 
+The finetuning loss converged over the iterations:
+
+<img src="images/loss_chart.png" alt="layer0" width="400"/>
+
+
 After finetuning is finished, the model is deposited into the checkpoint directory. We can then call the `gpt2.generate` method to auto-generate music notes. By default, it will start to generate music by itself. We can optionally specify a prefix, which sets the context for the music notes that is generated after it. 
 
 It is interesting to note that the GPT2-generated output notes are pretty much all in the same semantic format as the input. This indicates that the finetuned GPT2 model has learned the "grammar" of this quite different music domain. 
