@@ -69,7 +69,7 @@ else:
     return tokens
 ```
 
-with that attention matrix, Bertviz readily outputs the attention graph.
+With this attention matrix and the token list, Bertviz readily outputs the attention graph.
 
 <img src="images/layer0.png" alt="layer0" width="200"/>
 
