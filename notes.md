@@ -38,7 +38,7 @@ The finetune is actually quite straightforward, `gpt2.finetune` is all we need, 
 
 After finetuning is finished, the model is deposited into the checkpoint directory. We can then call the `gpt2.generate` method to auto-generate music notes. By default, it will start to generate music by itself. We can optionally specify a prefix, which sets the context for the music notes that is generated after it. 
 
-It is interesting to note that the output notes are pretty much all in the same semantic format as the input. This indicates that the finetuning model has learned the "grammar" of this quite different music domain. 
+It is interesting to note that the GPT2-generated output notes are pretty much all in the same semantic format as the input. This indicates that the finetuned GPT2 model has learned the "grammar" of this quite different music domain. 
 
 You can find the hosted notebooks on google colab:
 
