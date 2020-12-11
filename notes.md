@@ -17,7 +17,7 @@ We found this python library called [`gpt-2-simple`](https://github.com/minimaxi
 
 ### data preparation
 
-in order to feed music information into GPT2 model, we first need to convert the data into a text format that GPT2 model is able to process. For this purpose, we used [`music21` library from MIT](http://web.mit.edu/music21/). `music21` parses the mid file into notes, chords (concurrent notes), and other events, which we can use to feed into the model. 
+In order to feed music data into GPT2 model, we first need to convert midi files into a text format that GPT2 model is able to process. For this purpose, we used [`music21` library from MIT](http://web.mit.edu/music21/). `music21` parses the mid file into notes, chords (concurrent notes), and other events, which we can use to feed into the model. 
 
 There are a few types of the music elements that we are interested in: 
 1. notes: a single note that is played at a particular moment for a duration. We represent it by using its note + its octave, such as "C#3", "D-2", or "E3". 
