@@ -47,8 +47,8 @@ It is interesting to note that the GPT2-generated output notes are pretty much a
 
 You can find the hosted notebooks on google colab:
 
-1. [finetuning notebook](https://colab.research.google.com/drive/1qhEN4_M43gRNU-zREZV_dse8mp7DK0WM?usp=sharing)
-2. [generating and visualization notebook](https://colab.research.google.com/drive/1T-hssOMYS8d8cw4n6ufEAgaiUQlMbe5h?usp=sharing)
+1. [finetuning notebook](https://colab.research.google.com/drive/1T-hssOMYS8d8cw4n6ufEAgaiUQlMbe5h?usp=sharing)
+2. [generating and visualization notebook](https://colab.research.google.com/drive/1qhEN4_M43gRNU-zREZV_dse8mp7DK0WM?usp=sharing)
 
 ## Visualization
 
