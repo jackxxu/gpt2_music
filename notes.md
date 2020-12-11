@@ -13,7 +13,7 @@
 
 There are various approaches to finetune GPT2 model. one way is to finetune it against the pre-trained model from the [OpenAI GPT2 repo](https://github.com/openai/gpt-2). However, it will require that some work in setup. Alternatively, we could also use the [Huggingface GPT2 transformers](https://huggingface.co/transformers/model_doc/gpt2.html) to achieve similar objectives. 
 
-We found this python library called [`gpt-2-simple`](https://github.com/minimaxir/gpt-2-simple), which is quite popular with 2.4k github stars. We decided to try this library because it is a nice wrapper around the GPT2 pre-trained model with minimal setup required, and provides two convenient methods `finetune` for finetuning, and `generate` to auto-generate text. In addition, it also provides a useful command line interface so that we don't have to write code.
+We found this python library called [`gpt-2-simple`](https://github.com/minimaxir/gpt-2-simple), which is quite popular with 2.4k github stars. We decided to try this library because it is a nice wrapper around the GPT2 pre-trained model with minimal setup required with two convenient methods: `finetune` for finetuning, and `generate` to auto-generate text. In addition, it also provides a useful command line interface if we don't want to write code.
 
 ### data preparation
 
