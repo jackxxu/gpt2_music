@@ -103,4 +103,31 @@ This can be explained by that the later layers have learned the more corelations
 
 For future improvements, I'd like to work on the following:
 
-1. 
+1. encode the note itself: with the default tokenization, GPT2 doesn't recognizes music notes. for example: `C#2` is actually tokenized as 3 separate notes: `C`, `#`, and `3`, through the byte-pairing encoding. This is not ideal, as these 3 tokens are interpreted by the default language embedding, which doesn't apply to the music context. It will take a lot of training data to provide the context. It probably would be ideal to tokenize a music note such as `C#2` as one note. We can do that with the GPT2 `encoder.json` and `vocab.bpe` file. It will be interesting to see how GPT2 performs with distinct music notes encoding, with something like this
+
+```python
+note_to_token = dict()
+token_to_note = dict()
+
+token = 50256
+
+for octave in range(8):
+  for main in 'ABCDEFG':
+    for minor in ['#', '', '-']:
+      token += 1
+      note = f'{main}{minor}{octave}'
+      note_to_token[note] = token
+      token_to_note[token] = note
+
+print(note_to_token)
+print(token_to_note)
+
+## =>
+{'A#0': 50257, 'A0': 50258, 'A-0': 50259, 'B#0': 50260, 'B0': 50261, 'B-0': 50262, ...}
+{50257: 'A#0', 50258: 'A0', 50259: 'A-0', 50260: 'B#0', 50261: 'B0', 50262: 'B-0', ...}
+
+``` 
+
+2. 
+
+ 
