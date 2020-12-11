@@ -24,7 +24,7 @@ There are a few types of the music elements that we are interested in:
 2. chords: a collection of the notes that are played concurrently. We represent it by simply concatenating the aforementioned note representations with space.
 3. other notes are displayed with their `music21` name. 
 
-We then concatenate all these elements with command and output them into a single-column CSV file. Below is a sample sequence of notes that are converted from one midi file:
+We then concatenate all these elements and output them into a single-column CSV file. Below is a sample sequence of notes that are converted from one midi file:
 
 ```
 "Piano, tempo.MetronomeMark animato Quarter=120.01, C major, meter.TimeSignature 4/4, rest, rest, rest, rest, rest, tempo.MetronomeMark larghetto Quarter=60.0, D4, rest, G3, A3, B3, B4, G4, C5, A3, A3 C4 E4, G4 E4, rest, F3 A3 C4, E4, D4, G4, B3, C5, D5, E5, F5, E5, G4, A4, G4, E4, G4, E4, C4, A3, G4, E4, D4, C4, G3 B3 D4, A3, A3 C4, G3, F3, A3, A3, A3"
@@ -138,4 +138,4 @@ print(token_to_note)
 
 3. Overfit prevention. Because we have only finetuned GPT2 on around 1000 midi files, a rather small number, it could potentially make the model overfit on the training data. The model could simply "memorize" the entire music set that is trained on. If we could gather a richer data set, the probability of overfitting could be reduced.
 
-4. Training data. At this point, our training data set only contains one instrument (piano) and only the pitch and timing information. We have not included the rich data of velocity and also other instruments. This is done mostly for simplicity. For future efforts, it will be interesting to devise an encoding mechanism that includes this additional information in the training data in order to get richer and more engaging music output. 
+4. Training data. At this point, our training data set only contains one instrument (piano) and only the pitch and timing information. We have not included the rich data of velocity, duration, and also other instruments. This is done mostly for simplicity. For future efforts, it will be interesting to devise an encoding mechanism that includes this additional information in the training data in order to get richer and more engaging music output. 
