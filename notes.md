@@ -103,7 +103,7 @@ The attention in music seems to be a bit more scattered than language models, an
 </table>
 
 
-One plausible explanation is that the later layers have learned the more correlations between the notes, and therefore the attentions are more distinctive.
+One plausible explanation is that the later layers have learned more about the orrelations between the notes to make the attentions more distinctive.
 
 ## Future Improvements
 
